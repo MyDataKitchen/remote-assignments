@@ -9,3 +9,5 @@ def find_max(numbers):
     return temp
 
 
+print(find_max([1, 2, 4, 5])); 
+print(find_max([5, 2, 7, 1, 6])); 
