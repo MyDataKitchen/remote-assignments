@@ -33,6 +33,11 @@ body {
     float: right;
   }
 
+  .container {
+    position: relative;
+    text-align: center;
+  }
+
   .caption {
     position: absolute;
     top: 50%;
