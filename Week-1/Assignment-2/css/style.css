@@ -1,8 +1,12 @@
+html * {
+  font-family: Arial;
+
+}
+
 body {
     margin: 0 auto;
     color:#3a3a3a;
     width: 80%;
-    font-family: Arial;
   }
 
   .topnav {
