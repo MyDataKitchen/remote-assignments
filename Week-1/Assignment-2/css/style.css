@@ -1,5 +1,5 @@
 html * {
-  font: Arial;
+  font-family: Arial;
 
 }
 
@@ -104,6 +104,14 @@ body {
     padding:15px;
     border-radius:13px;
     width: 300px
+  }
+
+  @font-face {
+    font-family: "Some font";
+    src: url("css/fonts/some-font.eot");
+    src: url("css/fonts/some-font.woff") format("woff"),
+         url("css/fonts/some-font.otf") format("opentype"),
+         url("css/fonts/some-font.svg#filename") format("svg");
   }
   
 
