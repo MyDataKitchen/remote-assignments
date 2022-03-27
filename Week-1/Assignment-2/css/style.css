@@ -41,8 +41,22 @@ body {
   .caption {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
+  }
+
+  .caption a {
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: 70px;
+    -webkit-text-stroke: 3px black;
+    
+    color: #FFFAF0;
+    text-shadow:
+       5px 5px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }
 
   .theme {
