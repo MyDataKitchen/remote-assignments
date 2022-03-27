@@ -35,10 +35,10 @@ body {
 
   .caption {
     position: absolute;
-    top: 50%;
+    top: 115%;
     left: 52%;
     transform: translate(-50%, -50%);
-    font-size: 200%
+    font-size: 100%
   }
 
   .theme {
