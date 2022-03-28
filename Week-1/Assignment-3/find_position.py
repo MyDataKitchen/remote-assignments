@@ -1,12 +1,12 @@
 def find_position(numbers, target):
-
-  for index, num in enumerate(numbers):
+  index = 0
+  for num in numbers:
     if num == target:
-      break
+      return index
 
-    index = -1
+    index += 1
 
-  return index
+  return -1
 
 print(find_position([5, 2, 7, 1, 6], 5)) # should print 0 
 print(find_position([5, 2, 7, 1, 6], 7)) # should print 2 

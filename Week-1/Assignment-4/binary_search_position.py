@@ -3,7 +3,7 @@ def binary_search_position(numbers, target):
     right = len(numbers) - 1
 
     while left <= right:
-      mid = int((left + right) / 2)
+      mid = (left + right) // 2
 
       if numbers[mid] < target:
         left = mid + 1
