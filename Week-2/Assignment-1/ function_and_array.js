@@ -10,6 +10,12 @@ function max(numbers) {
 
 }
 
+console.log( max([1, 2, 4, 5]) ); // should print 5
+console.log( max([5, 2, 7, 1, 6]) ); // should print 7
+
+/*
+=======================================================================
+ */
 
 function findPosition(numbers, target) {
     let index = 0;
@@ -23,8 +29,6 @@ function findPosition(numbers, target) {
 
     return -1; 
 }
-console.log( max([1, 2, 4, 5]) ); // should print 5
-console.log( max([5, 2, 7, 1, 6]) ); // should print 7
 
 console.log( findPosition([5, 2, 7, 1, 6], 5) ); // should print 0
 console.log( findPosition([5, 2, 7, 1, 6], 7) ); // should print 2
