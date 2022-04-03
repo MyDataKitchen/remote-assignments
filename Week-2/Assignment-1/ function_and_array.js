@@ -11,7 +11,7 @@ function max(numbers) {
 }
 
 console.log( max([1, 2, 4, 5]) ); // should print 5
-console.log( max([5, 2, 7, 1, 6]) ); // should print 7
+console.log( max([5, 2, 7, 1, 6]) ); // should print 7s
 
 /*
 =======================================================================

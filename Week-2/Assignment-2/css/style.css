@@ -1,0 +1,142 @@
+body {
+    margin: 0 auto;
+    color:#3a3a3a;
+    width: 80%;
+    font-family: Arial;
+    padding: 1.5em 0;
+  }
+
+.topnav {
+background-color: #F5F5F5;
+overflow: hidden;
+}
+
+.topnav a {
+float: left;
+color: #808080;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav-right {
+float: right;
+}
+
+.container {
+position: relative;
+text-align: center;
+}
+
+.caption {
+position: absolute;
+top: 50%;
+left: 52%;
+transform: translate(-50%, -50%);
+background: transparent;
+border-width: 0px;
+outline: none;
+}
+
+.caption a {
+font-family:Comic Sans MS, Comic Sans, cursive;
+
+font-size: 300%;
+-webkit-text-stroke: 1.5px black;
+
+color: #FFFAF0;
+text-shadow:
+    5px 5px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.theme {
+text-align: center;
+padding: 1.5em 0;
+
+}
+
+.theme h3 {
+font-size: 40px;
+color: #808080; 
+}
+
+.theme-wrapper {
+display: grid;
+grid-template-columns: 50% 50% ;
+grid-template-rows: 300px 300px;
+grid-gap: 15px;
+width: 95%;
+margin-left: 2%;
+margin-right: 2%;
+}
+
+.wrapper-card {
+background-color: #DCDCDC;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+}
+
+.wrapper-card:hover {
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
+font-size: 18px;
+color: #696969;
+}
+
+.button {
+background-color: #111827;
+border: 1px solid transparent;
+border-radius: 13px;
+color: #FFFFFF; 
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+.button:hover {
+background-color: #374151;
+}
+
+.button:focus {
+box-shadow: none;
+outline: 2px solid transparent;
+outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+.button {
+    padding: .7rem 1.5rem;
+}
+}
+
+.rounded-input {
+padding:15px;
+border-radius:13px;
+width: 300px
+}
+
+@font-face {
+font-family: "Some font";
+src: url("css/fonts/some-font.eot");
+src: url("css/fonts/some-font.woff") format("woff"),
+        url("css/fonts/some-font.otf") format("opentype"),
+        url("css/fonts/some-font.svg#filename") format("svg");
+}
+
+.show-more {
+    display: none;
+}
+
+
