@@ -61,7 +61,6 @@ text-shadow:
 
 .theme {
 text-align: center;
-padding: 1.5em 0;
 
 }
 
@@ -137,6 +136,20 @@ src: url("css/fonts/some-font.woff") format("woff"),
 
 .show-more {
     display: none;
+}
+
+.show-more-btn{
+text-align: center;
+padding: 1.5em 0;
+}
+
+hr{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    
 }
 
 
