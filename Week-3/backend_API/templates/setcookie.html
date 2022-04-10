@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Set Cookie!</h1>
+        <div>
+            <input type="text" id="value" placeholder="Please enter your name">
+            <button type="button" onclick="btn()">Go!</button>
+            <p id="result"></p>
+        </div>
+    </body>
+
+    <script>
+        function btn() {
+    
+            let input_value = document.getElementById("value").value
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200){
+                    document.getElementById("result").innerHTML = 
+                    this.responseText;
+                }
+            };
+            xhttp.open("GET", "/trackName?name=" + input_value , true);
+            xhttp.send();
+        };
+    </script>
+</html>

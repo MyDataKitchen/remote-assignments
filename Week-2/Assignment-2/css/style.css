@@ -7,111 +7,111 @@ body {
   }
 
 .topnav {
-background-color: #F5F5F5;
-overflow: hidden;
+    background-color: #F5F5F5;
+    overflow: hidden;
 }
 
 .topnav a {
-float: left;
-color: #808080;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+    float: left;
+    color: #808080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a:hover {
-background-color: #ddd;
-color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 .topnav-right {
-float: right;
+    float: right;
 }
 
 .container {
-position: relative;
-text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 .caption {
-position: absolute;
-top: 50%;
-left: 52%;
-transform: translate(-50%, -50%);
-background: transparent;
-border-width: 0px;
-outline: none;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border-width: 0px;
+    outline: none;
 }
 
 .caption a {
-font-family:Comic Sans MS, Comic Sans, cursive;
+    font-family:Comic Sans MS, Comic Sans, cursive;
 
-font-size: 500%;
--webkit-text-stroke: 1.5px black;
+    font-size: 500%;
+    -webkit-text-stroke: 1.5px black;
 
-color: #FFFAF0;
-text-shadow:
-    5px 5px 0 #000,
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    color: #FFFAF0;
+    text-shadow:
+        5px 5px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .theme {
-text-align: center;
+    text-align: center;
 
 }
 
 .theme h3 {
-font-size: 40px;
-color: #808080; 
+    font-size: 40px;
+    color: #808080; 
 }
 
 .theme-wrapper {
-display: grid;
-grid-template-columns: 50% 50% ;
-grid-template-rows: 300px 300px;
-grid-gap: 15px;
-width: 95%;
-margin-left: 2%;
-margin-right: 2%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 300px 300px;
+    grid-gap: 15px;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .wrapper-card {
-background-color: #DCDCDC;
-color: #fff;
-border-radius: 5px;
-padding: 20px;
+    background-color: #DCDCDC;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .wrapper-card:hover {
-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-content {
-font-size: 18px;
-color: #696969;
+    font-size: 18px;
+    color: #696969;
 }
 
 .button {
-background-color: #111827;
-border: 1px solid transparent;
-border-radius: 13px;
-color: #FFFFFF; 
-font-size: 1rem;
-line-height: 1.5rem;
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    color: #FFFFFF; 
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .button:hover {
-background-color: #374151;
+    background-color: #374151;
 }
 
 .button:focus {
-box-shadow: none;
-outline: 2px solid transparent;
-outline-offset: 2px;
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 @media (min-width: 768px) {
@@ -121,9 +121,9 @@ outline-offset: 2px;
 }
 
 .rounded-input {
-padding:15px;
-border-radius:13px;
-width: 300px
+    padding:15px;
+    border-radius:13px;
+    width: 300px
 }
 
 @font-face {
@@ -139,8 +139,8 @@ src: url("css/fonts/some-font.woff") format("woff"),
 }
 
 .show-more-btn{
-text-align: center;
-padding: 1.5em 0;
+    text-align: center;
+    padding: 1.5em 0;
 }
 
 hr{
