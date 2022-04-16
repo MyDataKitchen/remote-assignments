@@ -2,7 +2,7 @@
 DB_CONFIG = {
     'host':'localhost',
     'user':'root',
-    'password':'mysqljiayong0226*',
+    'password':'',
     'database':'assignment'
 }
 
