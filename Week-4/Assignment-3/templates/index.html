@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div class="main">
+            <h1>Welcome to our website.</h1>
+        </div>
+        <button type="button" onclick="btnLogout()">Logout</button>
+    </body>
+    <script>
+        function btnLogout(){
+            
+            var xmlhttp = new XMLHttpRequest();
+            var url = "http://192.168.0.180:3000/logout";
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    setTimeout(function() { window.location=window.location;},1000);        
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencode');
+            xmlhttp.send();
+        };
+    </script>
+</html>
