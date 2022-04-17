@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            #login{
+                display: inline;
+            }
+
+            #register{
+                display: none;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div id="login">
+            <h1>Login</h1>
+            <form name="login-form">
+                <input type="email" placeholder="Email" id="signInEmail" required>
+                <input type="password" placeholder="Password" id="signInPassword" required>
+                <button type="button" onclick="btnLogin()">Login</button>
+                <button type="button" onclick="btnRedirect()">Register</button>
+                <p id="signInShow"></p>
+            </form>
+        </div>
+
+        <div id="register">
+            <h1>Register</h1>
+            <form name="register-form"> 
+                <input type="email" placeholder="Email" id="registerEmail" required>
+                <input type="password" placeholder="Password" id="registerPassword" required>
+                <input type="password" placeholder="Comfirm Password" id="registerComfirmPassword" required>
+                <button type="button" onclick="btnRegister()">Register</button>
+                <button type="button" onclick="btnBack()">Back</button>
+                <p id="registerShow"></p>
+            </form>
+        </div>
+        
+    </body>
+
+    <script>
+        function btnRedirect(){
+            let loginForm = document.getElementById("login");
+            let registerForm = document.getElementById("register");
+            loginForm.style.display = "none";
+            registerForm.style.display = "inline";
+        };
+
+        function btnBack(){
+            let loginForm = document.getElementById("login");
+            let registerForm = document.getElementById("register");
+            loginForm.style.display = "inline";
+            registerForm.style.display = "none";
+        };
+
+        function btnLogin(){
+            let signInEmail = document.getElementById("signInEmail").value
+            let signInPassword = document.getElementById("signInPassword").value
+
+            var xmlhttp = new XMLHttpRequest();
+            var url = "http://192.168.0.180:3000/login";
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {                   
+                    document.getElementById("login").innerHTML = this.responseText;
+                    setTimeout(function() { window.location=window.location;},1000);           
+                };
+            };
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencode');
+            xmlhttp.send(JSON.stringify({
+                "email": signInEmail,
+                "password": signInPassword
+            }));
+        };
+
+        function btnRegister(){
+            let registerEmail = document.getElementById("registerEmail").value
+            let registerPassword = document.getElementById("registerPassword").value
+            let registerComfirmPassword = document.getElementById("registerComfirmPassword").value
+            
+            var xmlhttp = new XMLHttpRequest();
+            var url = "http://192.168.0.180:3000/register";
+            
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {                   
+                    document.getElementById("register").innerHTML = this.responseText;
+                    setTimeout(function() { window.location=window.location;},1000); 
+                };
+            };
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencode');
+            xmlhttp.send(JSON.stringify({
+                "email": registerEmail,
+                "password": registerPassword,
+                "confirm_password": registerComfirmPassword
+            }));
+        };
+    </script>
+</html>

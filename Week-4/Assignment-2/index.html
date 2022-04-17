@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        <h1>JSON</h1>
+        <button type="button" onclick="btn()">GO</button>
+        <p id="show"></p>
+    </body>
+
+    <script>
+        function btn(){
+            function ajax(src, callback){
+   
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', src, true);
+                
+                xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200){
+                        callback(xhr.responseText);
+                    }
+                }
+                xhr.send();
+            };
+
+            function render(data){
+                
+                document.getElementById("show").innerHTML = data;
+        
+            };
+        
+            ajax("https://appworks-school.github.io/Remote-Aassigiment-Data/products", function(response){
+                render(response);
+            });
+        };
+    </script>
+</html>
