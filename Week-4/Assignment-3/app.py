@@ -1,9 +1,8 @@
-from flask import Flask, request, Response, jsonify, json, session, url_for, redirect, render_template
+from flask import Flask, request, Response, jsonify, json, session, render_template
 from flask_bcrypt import generate_password_hash, check_password_hash
 from flask_cors import CORS, cross_origin
 from setting import DB_CONFIG, SESSION_SECRET_KEY
 import pymysql
-import jwt
 import re
 
 def insert(params):
